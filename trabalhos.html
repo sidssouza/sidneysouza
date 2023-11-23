@@ -73,18 +73,17 @@
 	</script>
 </head>
 
-
-<body class="sobre-background">
+<body>
 
 	<header class="flex-header">
 		<div class="flex-item-header animacao-cima-para-baixo">
-			<a href="home.html">
+			<a href="index.html">
 				<img src="img/sidney-souza.svg" alt="Sidney Souza">
 			</a>
 		</div>
 		<div class="flex-menu animacao-cima-para-baixo">
 			<div class="flex-item-menu">
-				<a href="home.html">Home</a>
+				<a href="index.html">Home</a>
 			</div>
 			<div class="flex-item-menu">
 				<a href="sobre.html">Sobre</a>
@@ -104,18 +103,23 @@
 		<div class="flex-item-intro-trabalhos">
 			<h1 id="textoAnimado">Trabalhos que eu fiz</h1>
 		</div>
+		<div class="animacao-baixo-para-cima flex-item-intro">
+			<img style="width: unset;" src="img/seta-down-up.svg" alt="Um ícone com uma seta apontando para baixo">
+		</div>
 	</section>
 
 	<section class="lista-de-projetos">
 		<ul>
 			<li>
-				<a href="">
-					<img src="" alt="">
-					<div>
-						<p></p>
+				<a href="projetos/alto-cinco.html" alt="Ver projeto">
+					<img src="img/01.png" alt="">
+					<div class="info-do-projeto-no-card">
+						<p>Branding e UX/UI Design</p>
+						<h3>Alto Cinco</h2>
 					</div>
 				</a>
 			</li>
+
 		</ul>
 	</section>
 
@@ -127,14 +131,16 @@
 
 		<div class="flex-item-footer elemento">
 
-			<a target="_blank" alt="Mandar uma mensagem"
-				href="mailto:designer@sidneysouza.com?subject=Vamos%20trabalhar%20juntos">
-				<button class="pushable">
+			<div class="botao-com-aviso">
+				<button onclick="copiarTexto()" class="pushable">
 					<span class="front">
 						designer@sidneysouza.com
 					</span>
 				</button>
-			</a>
+				<div class="balao" id="balao">E-mail copiado!</div>
+			</div>
+
+
 
 			<a target="_blank" alt="Mandar uma mensagem"
 				href="https://api.whatsapp.com/send?phone=5548996082833&text=Ol%C3%A1%2C%20Sid.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20trabalho.">
@@ -176,6 +182,27 @@
 		<img src="img/whatsapp.svg" alt="Whatsapp">
 		<p>Falar pelo WhatsApp</p>
 	</a>
+
+	<script>
+		function copiarTexto() {
+			var texto = 'designer@sidneysouza.com';
+			navigator.clipboard.writeText(texto)
+				.then(function () {
+					mostrarBalao();
+				})
+				.catch(function (err) {
+					console.error("Erro ao copiar texto: ", err);
+				});
+		}
+
+		function mostrarBalao() {
+			var balao = document.getElementById('balao');
+			balao.style.display = 'block';
+			setTimeout(function () {
+				balao.style.display = 'none';
+			}, 2000); // Esconde o balão após 2 segundos (2000 milissegundos)
+		}
+	</script>
 
 	<script>
 		window.addEventListener('scroll', function () {
