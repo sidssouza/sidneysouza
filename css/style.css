@@ -5,6 +5,7 @@ body {
 }
 
 /* Scroll */
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 8px;
@@ -928,6 +929,13 @@ a {
   display: none;
 }
 
+#menu.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s linear;
+  /* Transição de opacidade ao mostrar */
+}
+
 @media screen and (max-width: 1080px) {
 
   body {
@@ -973,8 +981,6 @@ a {
     text-decoration: none;
     color: inherit;
   }
-
-  /* Botão */
 
   /* Botão */
 
@@ -1053,11 +1059,29 @@ a {
   }
 
   .flex-header {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    align-self: center;
+    padding: 6px 8px;
     z-index: 100;
+
+    transform: translateX(-50%);
+    left: 50%;
+    top: 8px;
+
+    background-color: #fff6da;
+    border-radius: 40px;
+  }
+
+  .flex-item-header {
+    margin-top: 11px;
+    margin-left: 16px;
+  }
+
+  .flex-item-header img {
+    width: 60px;
+    height: auto;
   }
 
   #menu-button {
@@ -1068,63 +1092,149 @@ a {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-color: #fff6da;
     padding: 16px;
-    border: solid 1px #262525;
     border-radius: 8px;
   }
 
   #menu ul {
-    padding: 8px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
 
   #menu li {
-    padding: 24px 36px;
-    border: 1px solid #FF6633;
-    border-radius: 12px;
     text-align: center;
   }
 
   #menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
+    padding: 24px 36px;
+    border: 1px solid #FF6633;
+    border-radius: 12px;
+  }
+
+  #menu-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    align-items: center;
+  }
+
+  #menu-button p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 8px;
   }
 
   /* Fim Menu Mobile */
 
+  /* Whatsapp */
+
+  .whatsapp {
+    position: fixed;
+    width: auto;
+    padding: 1em;
+    bottom: 1em;
+    right: 1em;
+    background-color: #17ef68;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+  }
+
   /* Intro Home */
+
+  .flex-intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    height: 100vh;
+    padding: 0 12%;
+  }
 
 
   .flex-item-intro h1 {
+    margin-top: 120px;
     text-align: center;
-    font-size: 54px;
+    font-size: 40px;
     max-width: 800px;
   }
 
-  .area-do-design-01 img {
-    width: 120px;
+  .flex-item-intro img {
+    width: 40px;
   }
 
-  .area-do-design-02 img {
-    width: 120px;
-  }
-
-  .area-do-design-03 img {
-    width: 120px;
+  .logotipo-simbolo-intro img {
+    display: none;
+    width: 40px;
+    height: auto;
   }
 
   .area-do-design-01 {
-    display: none;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .area-do-design-01 img {
+    transform: rotate(-12deg);
+    width: 100px;
   }
 
   .area-do-design-02 {
-    display: none;
+    position: absolute;
+    bottom: unset;
+    top: 18%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .area-do-design-02 img {
+    transform: rotate(12deg);
+    width: 100px;
   }
 
   .area-do-design-03 {
-    display: none;
+    position: absolute;
+    bottom: unset;
+    left: 35%;
+    top: 16%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .area-do-design-03 img {
+    transform: rotate(-16deg);
+    width: 100px;
   }
 
   /* Segunda seção */
@@ -1200,7 +1310,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 120px;
+    gap: 200px;
   }
 
   .lista-no-projeto-na-home li {
@@ -1235,7 +1345,12 @@ a {
   }
 
   .lista-no-projeto-na-home-btn {
-    display: none;
+    display: flex;
+    width: 80px;
+    height: 80px;
+
+    top: -20px;
+    left: -20px;
   }
 
   .lista-no-projeto-na-home-btn:hover {

@@ -97,9 +97,11 @@
 			</div>
 		</div>
 
-		<div class="menu-mobile">
+		<div class="menu-mobile animacao-cima-para-baixo">
 
-			<a id="menu-button"><img src="/img/estrela-orange.svg" alt=""></a>
+			<a id="menu-button"><img src="/img/menu-mobile.svg" alt="Folder">
+				<p>Menu</p>
+			</a>
 
 			<div id="menu">
 				<ul>
@@ -119,11 +121,22 @@
 		var menuButton = document.getElementById("menu-button");
 		var menu = document.getElementById("menu");
 
-		menuButton.addEventListener("click", function () {
+		menuButton.addEventListener("click", function (event) {
+			event.stopPropagation();
 			if (menu.style.display === "block") {
 				menu.style.display = "none";
 			} else {
 				menu.style.display = "block";
+			}
+		});
+
+		// Event listener para fechar o menu quando se clica fora dele
+		document.addEventListener("click", function (event) {
+			var isClickInsideMenu = menu.contains(event.target);
+			var isClickOnMenuButton = (event.target === menuButton);
+
+			if (!isClickInsideMenu && !isClickOnMenuButton) {
+				menu.style.display = "none";
 			}
 		});
 	</script>
@@ -362,7 +375,6 @@
 		href="https://api.whatsapp.com/send?phone=5548996082833&text=Ol%C3%A1%2C%20Sid.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20trabalho."
 		target="_blank" rel="noopener">
 		<img src="img/whatsapp.svg" alt="Whatsapp">
-		<p>Falar pelo WhatsApp</p>
 	</a>
 
 	<script>
