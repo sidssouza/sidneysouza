@@ -1064,14 +1064,15 @@ a {
     justify-content: space-between;
     align-self: center;
     padding: 6px 8px;
-    z-index: 100;
+    z-index: 10000000000;
 
     transform: translateX(-50%);
     left: 50%;
     top: 8px;
 
     background-color: #fff6da;
-    border-radius: 40px;
+    border-radius: 35px;
+    border: 1px solid #FF6633;
   }
 
   .flex-item-header {
@@ -1085,7 +1086,13 @@ a {
   }
 
   #menu-button {
+    position: relative;
     display: block;
+  }
+
+  #menu-button a {
+    position: absolute;
+    padding: 12px;
   }
 
   .menu-mobile {
@@ -1181,7 +1188,7 @@ a {
   .area-do-design-01 {
     position: absolute;
     top: 18%;
-    left: 5%;
+    left: 8%;
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
@@ -1194,14 +1201,14 @@ a {
 
   .area-do-design-01 img {
     transform: rotate(-12deg);
-    width: 100px;
+    width: 112px;
   }
 
   .area-do-design-02 {
     position: absolute;
     bottom: unset;
     top: 18%;
-    right: 5%;
+    right: 38%;
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
@@ -1214,14 +1221,15 @@ a {
 
   .area-do-design-02 img {
     transform: rotate(12deg);
-    width: 100px;
+    width: 112px;
   }
 
   .area-do-design-03 {
     position: absolute;
     bottom: unset;
-    left: 35%;
-    top: 16%;
+    left: unset;
+    right: 8%;
+    top: 18%;
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
@@ -1234,7 +1242,7 @@ a {
 
   .area-do-design-03 img {
     transform: rotate(-16deg);
-    width: 100px;
+    width: 112px;
   }
 
   /* Segunda seção */
@@ -1334,13 +1342,13 @@ a {
     font-weight: 500;
 
     position: absolute;
-    bottom: -100px;
-    right: -2px;
-    width: calc(100% - 48px);
+    bottom: -80px;
+    right: 7px;
+    width: calc(100% - 50px);
     background-color: #fff6da;
     border: solid 1px #262525;
     border-radius: 20px;
-    padding: 24px;
+    padding: 16px;
 
   }
 
