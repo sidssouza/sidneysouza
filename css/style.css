@@ -950,7 +950,7 @@ a {
     font-family: Paralucent;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 40px;
     line-height: 48px;
   }
 
@@ -1081,12 +1081,25 @@ a {
     gap: 8px;
   }
 
+  #menu li {
+    padding: 24px 36px;
+    border: 1px solid #FF6633;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  #menu a {
+    font-size: 20px;
+  }
+
   /* Fim Menu Mobile */
 
   /* Intro Home */
 
+
   .flex-item-intro h1 {
-    font-size: 40px;
+    text-align: center;
+    font-size: 54px;
     max-width: 800px;
   }
 
@@ -1136,10 +1149,6 @@ a {
     margin: 80px 24px;
   }
 
-  .trabalhos-titulo-box {
-    margin-bottom: 180px;
-  }
-
   .trabalhos-titulo-box p {
     position: absolute;
     right: 50px;
@@ -1172,8 +1181,9 @@ a {
   }
 
   .logotipo-de-clientes img {
-    width: 120;
-    height: auto;
+    width: 140px;
+    height: 90px;
+    object-fit: cover;
   }
 
   /* Projetos na Home */
@@ -1185,7 +1195,7 @@ a {
   }
 
   .lista-no-projeto-na-home {
-    margin-top: 120px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1248,15 +1258,23 @@ a {
     text-align: center;
   }
 
+  .flex-footer-geral {
+    margin: 24px;
+  }
+
   .flex-item-footer {
     flex-direction: column;
   }
 
   .socialmedia-footer-nav ul {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 4px;
+  }
 
+  .socialmedia-footer-nav li {
+    margin-bottom: 24px;
   }
 
   .socialmedia-footer-nav a {
@@ -1266,6 +1284,7 @@ a {
     border-radius: 100px;
     border: 1px solid #262525;
     transition: 0.3s ease-in-out;
+    font-size: 14px;
   }
 
   .socialmedia-footer-nav li:hover {
