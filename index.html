@@ -78,25 +78,55 @@
 
 	<header class="flex-header">
 		<div class="flex-item-header animacao-cima-para-baixo">
-			<a href="index.html">
-				<img src="img/sidney-souza.svg" alt="Sidney Souza">
+			<a href="/index.html">
+				<img src="/img/sidney-souza.svg" alt="Sidney Souza">
 			</a>
 		</div>
 		<div class="flex-menu animacao-cima-para-baixo">
 			<div class="flex-item-menu">
-				<a href="index.html">Home</a>
+				<a href="/index.html">Home</a>
 			</div>
 			<div class="flex-item-menu">
-				<a href="sobre.html">Sobre</a>
+				<a href="/sobre.html">Sobre</a>
 			</div>
 			<div class="flex-item-menu">
-				<a href="trabalhos.html">Trabalhos</a>
+				<a href="/trabalhos.html">Trabalhos</a>
 			</div>
 			<div class="flex-item-menu">
-				<a href="contato.html">Contato</a>
+				<a href="/contato.html">Contato</a>
 			</div>
 		</div>
+
+		<div class="menu-mobile">
+
+			<a id="menu-button"><img src="/img/estrela-orange.svg" alt=""></a>
+
+			<div id="menu">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/sobre.html">Sobre</a></li>
+					<li><a href="/trabalhos.html">Trabalhos</a></li>
+					<li><a href="/contato.html">Contato</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
 	</header>
+
+	<script>
+		var menuButton = document.getElementById("menu-button");
+		var menu = document.getElementById("menu");
+
+		menuButton.addEventListener("click", function () {
+			if (menu.style.display === "block") {
+				menu.style.display = "none";
+			} else {
+				menu.style.display = "block";
+			}
+		});
+	</script>
 
 	<section class="flex-intro">
 		<div class="animacao-cima-para-baixo flex-item-intro logotipo-simbolo-intro"><img src="img/logo-mao-sid.svg"
@@ -223,7 +253,7 @@
 		<ul class="lista-no-projeto-na-home">
 			<li class="elemento">
 				<a href="">
-					<img src="img/04.jpg" alt="Imagem do projeto">
+					<img src="img/imagem-porjeto-home-01.jpg" alt="Imagem do projeto">
 					<h3 class="elemento">Colaborei com a agência Inkuba a repensar a maneira de categorizar os produtos
 						em
 						um catálogo
@@ -234,7 +264,7 @@
 
 			<li class="elemento">
 				<a href="">
-					<img src="img/01.jpg" alt="Imagem do projeto">
+					<img src="img/imagem-porjeto-home-01.jpg" alt="Imagem do projeto">
 					<h3 class="elemento">Colaborei com a agência Inkuba a repensar a maneira de categorizar os produtos
 						em um catálogo
 						digital da BIC e otimizei o tempo de execução de tarefas.</h3>
@@ -244,7 +274,7 @@
 
 			<li class="elemento">
 				<a href="">
-					<img src="img/03.jpg" alt="Imagem do projeto">
+					<img src="img/imagem-porjeto-home-01.jpg" alt="Imagem do projeto">
 					<h3 class="elemento">Colaborei com a agência Inkuba a repensar a maneira de categorizar os produtos
 						em
 						um catálogo
@@ -255,7 +285,7 @@
 
 			<li class="elemento">
 				<a href="">
-					<img src="img/01.jpg" alt="Imagem do projeto">
+					<img src="img/imagem-porjeto-home-01.jpg" alt="Imagem do projeto">
 					<h3 class="elemento">Colaborei com a agência Inkuba a repensar a maneira de categorizar os produtos
 						em
 						um catálogo
@@ -266,8 +296,7 @@
 		</ul>
 
 		<div class="botao-ver-mais-projetos elemento">
-			<a alt="Mandar uma mensagem"
-				href="/trabalhos.html">
+			<a alt="Mandar uma mensagem" href="/trabalhos.html">
 				<button class="pushable">
 					<span class="front">
 						Ver mais projetos
@@ -317,13 +346,10 @@
 				<li><a href="https://dribbble.com/sadneyjr" alt="Ver mais" target="_blank" rel="noopener">Dribbble</a>
 				</li>
 
-				<li><a href="https://vimeo.com/user117310396" alt="Ver mais" target="_blank" rel="noopener">Vimeo</a>
-				</li>
-
 				<li><a href="https://www.linkedin.com/in/sidneysouzadg" alt="Ver mais" target="_blank"
 						rel="noopener">Linkedin</a></li>
 
-				<li><a href="https://www.instagram.com/sidneysouza.dg/" alt="Ver mais" target="_blank"
+				<li><a href="https://www.instagram.com/sidneysouzadesign/" alt="Ver mais" target="_blank"
 						rel="noopener">Instagram</a></li>
 
 			</ul>
