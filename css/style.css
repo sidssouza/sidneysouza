@@ -950,7 +950,7 @@ a {
     font-family: Paralucent;
     font-style: normal;
     font-weight: 500;
-    font-size: 6em;
+    font-size: 3em;
     line-height: 1.1em;
   }
 
@@ -1019,6 +1019,11 @@ a {
 
   .pushable:focus:not(:focus-visible) {
     outline: none;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 24px;
   }
 
   /* Scroll */
@@ -1319,6 +1324,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 200px;
+    margin-bottom: 180px;
   }
 
   .lista-no-projeto-na-home li {
@@ -1371,7 +1377,7 @@ a {
   }
 
   .botao-ver-mais-projetos {
-    margin-top: 180px;
+    margin-top: 40px;
     text-align: center;
   }
 
@@ -1414,6 +1420,213 @@ a {
     transition: 0.3s ease-in-out;
     transform: translate(0, -10px);
   }
+
+
+  /* --------------- Sobre Mobile --------------- */
+
+  .intro-sobre {
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 0 6%;
+    overflow-x: hidden;
+  }
+
+  .frase-intro-sobre {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+  }
+
+  .frase-intro-sobre p {
+    font-size: 16px;
+    padding: 24px;
+    border-radius: 100px;
+    background-color: #fff6da;
+    border: 1px solid #262525;
+    transform: rotate(-8deg);
+  }
+
+  .abordagem {
+    background-color: #fff6da;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .abordagem h3 {
+    max-width: 1080px;
+    margin: 0 24px;
+  }
+
+
+
+
+  /* --------------- Portfólio --------------- */
+
+
+  .flex-intro-trabalhos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 400px;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .flex-intro-trabalhos img {
+    width: 48px;
+    height: auto;
+  }
+
+  .lista-de-projetos {
+    display: flex;
+    justify-content: center;
+    background-color: #fff6da;
+    width: auto;
+    padding: 80px 0;
+  }
+
+  .lista-de-projetos ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .lista-de-projetos li {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: 24px;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+  }
+
+  .lista-de-projetos li:hover {
+    position: relative;
+    max-width: 100%;
+    border-radius: 10px;
+    transform: translateY(-20px);
+    transition: .3s ease-in-out;
+  }
+
+  .lista-de-projetos img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #262525;
+  }
+
+
+  .info-do-projeto-no-card {
+    bottom: 0;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+
+
+  /* -------------- Projeto Mobile -------------- */
+
+  .projeto-portifolio {
+    background-color: #fff6da;
+  }
+
+  .projeto-portifolio span {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+
+  .projeto-portifolio span img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .projeto-portifolio p {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+
+  .projeto-portifolio h3 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .infos-do-projeto {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .banner-projeto img {
+    width: 100%;
+  }
+
+  .listagem-de-imagens-no-projeto {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .listagem-de-imagens-no-projeto li img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .entregaveis-do-projeto {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .entregaveis-do-projeto ul {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    row-gap: 12px;
+  }
+
+  .background-botao-projetos {
+    background-color: #fff6da;
+    padding: 8px 0px 80px 0px;
+  }
+
+
+  /* ------------- Contato Mobile -----------------*/
+
+  .contato-intro {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botoes-contato {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+
 
 
 

@@ -77,25 +77,68 @@
 
 	<header class="flex-header">
 		<div class="flex-item-header animacao-cima-para-baixo">
-			<a href="index.html">
-				<img src="img/sidney-souza.svg" alt="Sidney Souza">
+			<a href="/index.html">
+				<img src="/img/sidney-souza.svg" alt="Sidney Souza">
 			</a>
 		</div>
 		<div class="flex-menu animacao-cima-para-baixo">
 			<div class="flex-item-menu">
-				<a href="index.html">Home</a>
+				<a href="/index.html">Home</a>
 			</div>
 			<div class="flex-item-menu">
-				<a href="sobre.html">Sobre</a>
+				<a href="/sobre.html">Sobre</a>
 			</div>
 			<div class="flex-item-menu">
-				<a href="trabalhos.html">Trabalhos</a>
+				<a href="/trabalhos.html">Trabalhos</a>
 			</div>
 			<div class="flex-item-menu">
-				<a href="contato.html">Contato</a>
+				<a href="/contato.html">Contato</a>
 			</div>
 		</div>
+
+		<div class="menu-mobile animacao-cima-para-baixo">
+
+			<a id="menu-button"><img src="/img/menu-mobile.svg" alt="Folder">
+				<p>Menu</p>
+			</a>
+
+			<div id="menu">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/sobre.html">Sobre</a></li>
+					<li><a href="/trabalhos.html">Trabalhos</a></li>
+					<li><a href="/contato.html">Contato</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
 	</header>
+
+	<script>
+		var menuButton = document.getElementById("menu-button");
+		var menu = document.getElementById("menu");
+
+		menuButton.addEventListener("click", function (event) {
+			event.stopPropagation();
+			if (menu.style.display === "block") {
+				menu.style.display = "none";
+			} else {
+				menu.style.display = "block";
+			}
+		});
+
+		// Event listener para fechar o menu quando se clica fora dele
+		document.addEventListener("click", function (event) {
+			var isClickInsideMenu = menu.contains(event.target);
+			var isClickOnMenuButton = (event.target === menuButton);
+
+			if (!isClickInsideMenu && !isClickOnMenuButton) {
+				menu.style.display = "none";
+			}
+		});
+	</script>
 
 	<section class="intro-sobre">
 		<h1 id="textoAnimado">Oi! Me chamo Sidney Souza</h1>
@@ -146,13 +189,10 @@
 				<li><a href="https://dribbble.com/sadneyjr" alt="Ver mais" target="_blank" rel="noopener">Dribbble</a>
 				</li>
 
-				<li><a href="https://vimeo.com/user117310396" alt="Ver mais" target="_blank" rel="noopener">Vimeo</a>
-				</li>
-
 				<li><a href="https://www.linkedin.com/in/sidneysouzadg" alt="Ver mais" target="_blank"
 						rel="noopener">Linkedin</a></li>
 
-				<li><a href="https://www.instagram.com/sidneysouza.dg/" alt="Ver mais" target="_blank"
+				<li><a href="https://www.instagram.com/sidneysouzadesign/" alt="Ver mais" target="_blank"
 						rel="noopener">Instagram</a></li>
 
 			</ul>
@@ -166,7 +206,6 @@
 		href="https://api.whatsapp.com/send?phone=5548996082833&text=Ol%C3%A1%2C%20Sid.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20trabalho."
 		target="_blank" rel="noopener">
 		<img src="img/whatsapp.svg" alt="Whatsapp">
-		<p>Falar pelo WhatsApp</p>
 	</a>
 
 	<script>
