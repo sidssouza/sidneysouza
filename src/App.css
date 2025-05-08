@@ -1,0 +1,299 @@
+:root {
+  /* Cores */
+  --brand-color: #80f6d8;
+  --color-primary: #060b09;
+  --color-secondary: #060b09;
+  --color-text: white;
+  --color-text-inverse: white;
+
+  /* Tipografia - Atualizada para Neulis */
+  --font-family-base: "neulis-neue", sans-serif;
+  --font-family-hairline: "neulis-cursive", sans-serif;
+  --letter-spacing-base: -0.01em;
+  --letter-spacing-small: 0.01em;
+
+  /* Espaçamentos */
+  --spacing-xs: 12px;
+  --spacing-sm: 20px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+  --spacing-xl: 60px;
+
+  /* Tamanhos de fonte */
+  --font-size-base: 18px;
+  --font-size-sm: 16px;
+  --font-size-lg: 72px;
+  --font-size-xl: 24px;
+
+  /* Linhas de base */
+  --line-height-sm: 22px;
+  --line-height-md: 24px;
+  --line-height-lg: 28px;
+  --line-height-xl: 86px;
+
+  /* Tamanhos */
+  --logo-width: 72px;
+  --max-width-text: 400px;
+  --max-width-heading: 884px;
+
+  /* Transições */
+  --transition-xs: ease 0.3s;
+
+  /* Scale */
+
+  --transform-size-sm: scale(1.1);
+  --transform-size-md: scale(1.3);
+  --transform-size-lg: scale(1.5);
+  --transform-size-xl: scale(1.7);
+
+  /* Scrollbar */
+  --scrollbar-width: 12px;
+}
+
+/* Estilos base */
+body {
+  height: 100vh;
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing-base);
+  background-color: var(--color-secondary);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+footer {
+  background-color: var(--color-primary);
+}
+
+h1 {
+  font-family: var(--font-family-hairline);
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-xl);
+  margin: 0;
+  color: var(--brand-color);
+}
+
+/* Para texto em itálico */
+.italic {
+  font-family: var(--font-family-base);
+  font-style: italic;
+}
+
+/* Para texto hairline (fino) */
+.hairline {
+  font-family: var(--font-family-hairline);
+  font-weight: 100;
+}
+
+.hairline-italic {
+  font-family: var(--font-family-hairline);
+  font-weight: 100;
+  font-style: italic;
+}
+
+p {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-md);
+  letter-spacing: var(--letter-spacing-small);
+  margin: 0;
+  color: var(--color-text);
+}
+
+a {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--font-size-base);
+  margin: 0;
+  text-decoration: none;
+  color: var(--brand-color);
+}
+
+/* Componentes */
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.logotipo {
+  width: var(--logo-width);
+  padding: var(--spacing-lg) 0;
+}
+
+.intro {
+  height: 100vh;
+  padding: 0 var(--spacing-xl);
+}
+
+.intro h1 {
+  max-width: var(--max-width-heading);
+}
+
+.approach {
+  display: flex;
+  padding: var(--spacing-lg) 0;
+}
+
+.approach p {
+  max-width: var(--max-width-text);
+  margin-right: var(--spacing-md);
+}
+
+.lets_talk {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  position: absolute;
+  left: var(--spacing-xl);
+  bottom: var(--spacing-xl);
+  transition: var(--transition-xs);
+}
+
+.lets_talk:hover {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  position: absolute;
+  left: var(--spacing-xl);
+  bottom: var(--spacing-xl);
+  transform: var(--transform-size-sm);
+}
+
+.social_media {
+  position: absolute;
+  right: var(--spacing-xl);
+  bottom: var(--spacing-xl);
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.social_media a {
+  transition: var(--transition-xs);
+}
+
+.social_media a:hover {
+  transform: var(--transform-size-md);
+}
+
+.projects {
+  display: grid;
+  height: calc(50%);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.projects img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+
+.lets_talk_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-xl);
+}
+
+.lets_talk_footer a {
+  color: var(--brand-color);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  transition: var(--transition-xs);
+}
+
+.lets_talk_footer a:hover {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transform: var(--transform-size-sm);
+}
+
+.social_media_footer {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.social_media_footer a {
+  transition: var(--transition-xs);
+}
+
+.social_media_footer a:hover {
+  transform: var(--transform-size-md);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-track:hover {
+  background: var(--color-primary);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  :root {
+    --font-size-lg: 24px;
+    --font-size-base: 16px;
+    --line-height-xl: 28px;
+    --line-height-md: 22px;
+    --spacing-xl: 20px;
+  }
+
+  .logotipo {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .intro {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .approach {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+  }
+
+  .lets_talk {
+    left: var(--spacing-sm);
+    bottom: var(--spacing-sm);
+  }
+
+  .social_media {
+    display: none;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .lets_talk_footer {
+    align-items: flex-start;
+    padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-lg);
+    gap: var(--spacing-lg);
+    flex-direction: column;
+  }
+
+  .lets_talk_footer a {
+    gap: 8px;
+  }
+}
