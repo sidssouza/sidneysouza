@@ -10,11 +10,11 @@ function App() {
           <p>Sidney Souza</p>
         </header>
 
-        <h1>Design de interfaces para boas ideias.</h1>
+        <h1>UX & UI, product e design de interfaces para boas ideias.</h1>
         <div className="approach">
-          <p>Ajudo negócios inovadores a se destacarem em seus ecossistemas através de pilares do design e com profundas pesquisas de mercado visando desenvolver sistemas de marcas, produtos, serviços e soluções relevantes capazes de se conectarem com seus clientes e investidores.</p>
+          <p>Colaboro com e para negócios se destacarem através do design centrado em pessoas e visando desenvolver soluções criativas e inovadoras.</p>
 
-          <p>A partir de fortes conexões entre design gráfico, branding, web design, design de produto, design de serviços e da experiência do usuário eu consigo gerar valores alinhados com a visão e propósito da marca a fim de guiá-la ao caminho desejado e de forma escalável.</p>
+          <p>A partir de pontes entre design e tecnologia, do produtos ou serviço a storytellings que se conectam gerando resultados.</p>
         </div>
 
         <section>
