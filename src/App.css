@@ -22,14 +22,14 @@
   /* Tamanhos de fonte */
   --font-size-base: 18px;
   --font-size-sm: 16px;
-  --font-size-lg: 72px;
+  --font-size-lg: 56px;
   --font-size-xl: 24px;
 
   /* Linhas de base */
   --line-height-sm: 22px;
   --line-height-md: 24px;
   --line-height-lg: 28px;
-  --line-height-xl: 86px;
+  --line-height-xl: 64px;
 
   /* Tamanhos */
   --logo-width: 72px;
@@ -48,6 +48,9 @@
 
   /* Scrollbar */
   --scrollbar-width: 12px;
+
+  /* Border */
+  --border-stroke-sm: 1px solid var(--brand-color);
 }
 
 /* Estilos base */
@@ -61,6 +64,27 @@ body {
   overflow-x: hidden;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1rem = 10px para facilitar cálculos */
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
 footer {
   background-color: var(--color-primary);
 }
@@ -71,6 +95,25 @@ h1 {
   font-style: normal;
   font-size: var(--font-size-lg);
   line-height: var(--line-height-xl);
+  margin: 0;
+  color: var(--brand-color);
+}
+
+h2 {
+  font-family: var(--font-family-hairline);
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-xl);
+  margin: 0;
+  color: var(--brand-color);
+}
+
+h3 {
+  font-family: var(--font-family-hairline);
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--font-size-xl);
   margin: 0;
   color: var(--brand-color);
 }
@@ -98,7 +141,7 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: var(--font-size-base);
-  line-height: var(--line-height-md);
+  line-height: var(--line-height-lg);
   letter-spacing: var(--letter-spacing-small);
   margin: 0;
   color: var(--color-text);
@@ -112,6 +155,99 @@ a {
   margin: 0;
   text-decoration: none;
   color: var(--brand-color);
+}
+
+/* Projects */
+.projects-section {
+  border-top: var(--border-stroke-sm);
+  border-bottom: var(--border-stroke-sm);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.title-project {
+  padding: 0 0 var(--spacing-xl) 0;
+}
+
+.project-area {
+  display: flex;
+  gap: var(--spacing-lg);
+  background-color: rgba(128, 246, 216, 0.025);
+  padding: var(--spacing-xl);
+  border-radius: 24px;
+}
+
+.project-image-info {
+  border: 1px solid #80f6d8;
+  border-radius: 16px !important;
+  max-height: 400px;
+  transition: var(--transition-xs);
+  aspect-ratio: 1/1;
+}
+
+.project-image-info:hover {
+  box-shadow: 0px 0px 0px 5px rgba(128, 246, 216, 0.4);
+}
+
+.project-image-info:active {
+  box-shadow: 0px 0px 0px 5px var(--brand-color);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.projects-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.projects-tags p {
+  padding: 4px 16px;
+  border-radius: 100px;
+  border: var(--border-stroke-sm);
+  font-size: var(--font-size-sm);
+  user-select: none;
+  transition: var(--transition-xs);
+  text-wrap: nowrap;
+}
+
+.projects-tags p:hover {
+  color: var(--color-primary);
+  background-color: var(--brand-color);
+}
+
+.project-stack-title {
+  color: var(--brand-color);
+  font-size: var(--font-size-sm);
+  padding-bottom: var(--spacing-sm);
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.project-stack p {
+  user-select: none;
+  background-color: rgba(128, 246, 216, 0.1);
+  font-size: var(--font-size-sm);
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-wrap: nowrap;
+}
+
+.project-stack p:hover {
+  background-color: rgba(128, 246, 216, 0.2);
+  font-size: var(--font-size-sm);
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 /* Componentes */
@@ -206,6 +342,7 @@ a {
   align-items: center;
   gap: var(--spacing-xs);
   transition: var(--transition-xs);
+  padding: 0;
 }
 
 .lets_talk_footer a:hover {
@@ -231,32 +368,32 @@ a {
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: var(--scrollbar-width);
+  cursor: grabbing;
 }
 
 ::-webkit-scrollbar-track {
   background: var(--color-secondary);
+  border: var(--border-stroke-sm);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
+  background: var(--brand-color);
+  border: var(--border-stroke-sm);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-secondary);
-}
-
-::-webkit-scrollbar-track:hover {
-  background: var(--color-primary);
+  cursor: grabbing;
+  background: var(--brand-color);
 }
 
 /* Media Queries */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
   :root {
     --font-size-lg: 24px;
     --font-size-base: 16px;
-    --line-height-xl: 28px;
+    --line-height-xl: 32px;
     --line-height-md: 22px;
-    --spacing-xl: 20px;
+    --spacing-xl: 40px 20px;
   }
 
   .logotipo {
@@ -275,7 +412,7 @@ a {
 
   .lets_talk {
     left: var(--spacing-sm);
-    bottom: var(--spacing-sm);
+    bottom: var(--spacing-lg);
   }
 
   .social_media {
@@ -294,6 +431,78 @@ a {
   }
 
   .lets_talk_footer a {
+    flex-direction: row;
     gap: 8px;
   }
+
+  /* Projects */
+  .project-area {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    background-color: rgba(128, 246, 216, 0.025);
+    padding: var(--spacing-xl);
+    border-radius: 24px;
+  }
+
+  .project-image-info {
+    border: 1px solid #80f6d8;
+    border-radius: 16px;
+    aspect-ratio: 1/1;
+    max-width: 400px;
+    transition: var(--transition-xs);
+    overflow: hidden;
+  }
+}
+
+/* Motion */
+.top-down-intro {
+  animation-name: moveBox;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+@keyframes moveBox {
+  0% {
+    transform: translateY(-500px) rotate(-40deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  animate__fadeIn {
+    animation-name: fadeIn;
+  }
+}
+
+.down-top-intro {
+  animation-name: moveBox1;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+@keyframes moveBox1 {
+  0% {
+    transform: translateY(500px) rotate(-40deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  animate__fadeIn {
+    animation-name: fadeIn;
+  }
+}
+
+.elemento {
+  opacity: 1;
+  transform: translateY(200px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.elemento.aparecendo {
+  opacity: 1;
+  transform: translateY(0);
 }
