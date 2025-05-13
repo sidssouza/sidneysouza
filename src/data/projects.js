@@ -38,7 +38,6 @@ const projectsData = [
             { id: 3, image: "/img/pauta-04.png", title: "Emet" },
             { id: 3, image: "/img/pauta-05.png", title: "Emet" },
             { id: 3, image: "/img/pauta-06.png", title: "Emet" },
-            { id: 3, image: "/img/pauta-07.png", title: "Emet" },
             { id: 3, image: "/img/pauta-08.png", title: "Emet" },
             { id: 3, image: "/img/pauta-09.png", title: "Emet" }
         ],
