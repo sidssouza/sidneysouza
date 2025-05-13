@@ -394,9 +394,11 @@ a {
     --line-height-xl: 32px;
     --line-height-md: 22px;
     --spacing-xl: 40px 20px;
+    --logo-width: 48px;
   }
 
   .logotipo {
+    width: var(--logo-width);
     padding: var(--spacing-sm) 0;
   }
 
@@ -412,7 +414,7 @@ a {
 
   .lets_talk {
     left: var(--spacing-sm);
-    bottom: var(--spacing-lg);
+    bottom: 20px;
   }
 
   .social_media {
