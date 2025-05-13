@@ -32,19 +32,33 @@ const projectsData = [
         id: 3,
         title: "Pauta",
         images: [
-            { id: 3, image: "/img/pauta-01.png", title: "Emet" },
-            { id: 3, image: "/img/pauta-02.png", title: "Emet" },
-            { id: 3, image: "/img/pauta-03.png", title: "Emet" },
-            { id: 3, image: "/img/pauta-04.png", title: "Emet" },
-            { id: 3, image: "/img/pauta-05.png", title: "Emet" },
-            { id: 3, image: "/img/pauta-06.png", title: "Emet" },
-            { id: 3, image: "/img/pauta-08.png", title: "Emet" },
-            { id: 3, image: "/img/pauta-09.png", title: "Emet" }
+            { id: 3, image: "/img/pauta-01.png", title: "Pauta" },
+            { id: 3, image: "/img/pauta-02.png", title: "Pauta" },
+            { id: 3, image: "/img/pauta-03.png", title: "Pauta" },
+            { id: 3, image: "/img/pauta-04.png", title: "Pauta" },
+            { id: 3, image: "/img/pauta-05.png", title: "Pauta" },
+            { id: 3, image: "/img/pauta-06.png", title: "Pauta" },
+            { id: 3, image: "/img/pauta-08.png", title: "Pauta" },
+            { id: 3, image: "/img/pauta-09.png", title: "Pauta" }
         ],
         tags: ["2023", "Visual design", "UI/UX design", "Product Design"],
         description: "Junto com a Tiki, redesenhei o site da Pauta com foco em UX e performance. Conduzi análises de percurso, heurísticas e testes para entender os pontos de fricção e redesenhar a experiência. Atuei como Product Designer, criando um design system completo e componentizando toda a interface para garantir consistência e agilidade no desenvolvimento.",
         tools: ["Adobe Creative Cloud", "Figma", "Pesquisa via entrevistas", "Testes"]
-    }
+    },
+    {
+        id: 4,
+        title: "Tiki - Squads em Ação (Jogo Interativo)",
+        images: [
+            { id: 1, image: "/img/tiki-01.png", title: "Tiki" },
+            { id: 2, image: "/img/tiki-02.png", title: "Tiki" },
+            { id: 3, image: "/img/tiki-03.png", title: "Tiki" },
+            { id: 4, image: "/img/tiki-04.png", title: "Tiki" },
+            { id: 5, image: "/img/tiki-05.png", title: "Tiki" }
+        ],
+        tags: ["2024", "Visual design", "UI/UX design", "Ilustração"],
+        description: "Na ação Squads em Ação da Tiki para o RD Summit, criei o layout e a experiência visual de um jogo interativo exibido em uma TV no estande. Assinei a direção de arte e ilustrei os personagens, conectando a proposta da marca a uma experiência divertida e envolvente para o público do evento.",
+        tools: ["Adobe Creative Cloud", "Figma"]
+    },
 ];
 
 export default projectsData;
