@@ -14,7 +14,7 @@ function App() {
 
         <h1 className='top-down-intro'>UX & UI, product e design de interfaces para boas ideias.</h1>
         <div className="approach down-top-intro">
-          <p>Com +8 anos de experiência eu colaboro com e para negócios se destacarem através do design centrado em pessoas e visando desenvolver soluções criativas e inovadoras.</p>
+          <p>Designer que colaboro com e para negócios se destacarem através do design centrado em pessoas e visando desenvolver soluções criativas e inovadoras.</p>
           <p>A partir de pontes entre design e tecnologia, do produtos ou serviço a storytellings que se conectam gerando resultados.</p>
         </div>
         <a className="lets_talk down-top-section" target="_blank" href="https://api.whatsapp.com/send?phone=5548996385263" rel="noopener noreferrer">
@@ -32,7 +32,7 @@ function App() {
         ))}
       </section>
 
-      <footer className="lets_talk_footer">
+      <footer className="lets_talk_footer down-top-section">
         <a className="lets_talk_footer" target="_blank" href="https://api.whatsapp.com/send?phone=5548996385263" rel="noopener noreferrer">
           Vamos Conversar?<img src="/img/vector-white.svg" alt="um ícone de seta" />
         </a>
@@ -44,7 +44,7 @@ function App() {
 }
 
 const SocialMedia = ({ variant = 'default' }) => (
-  <nav className={`down-top-intro social_media${variant === 'footer' ? '_footer' : ''}`}>
+  <nav className={`social_media${variant === 'footer' ? '_footer' : ''}`}>
     <a target="_blank" href="https://api.whatsapp.com/send?phone=5548996385263" rel="noopener noreferrer">
       <img src="/img/whatsapp_white.svg" alt="WhatsApp" />
     </a>
