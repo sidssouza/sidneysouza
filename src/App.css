@@ -263,7 +263,7 @@ a {
 }
 
 .intro {
-  height: 100vh;
+  margin-bottom: var(--spacing-xl);
   padding: 0 var(--spacing-xl);
 }
 
@@ -282,12 +282,9 @@ a {
 }
 
 .lets_talk {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: var(--spacing-xs);
-  position: absolute;
-  left: var(--spacing-xl);
-  bottom: var(--spacing-xl);
   transition: var(--transition-xs);
 }
 
@@ -295,10 +292,6 @@ a {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  position: absolute;
-  left: var(--spacing-xl);
-  bottom: var(--spacing-xl);
-  transform: var(--transform-size-sm);
 }
 
 .social_media {
@@ -407,6 +400,7 @@ a {
   }
 
   .approach {
+    display: inline-flex;
     flex-direction: column;
     gap: var(--spacing-md);
     padding: var(--spacing-md) 0;
@@ -494,6 +488,22 @@ a {
 
   animate__fadeIn {
     animation-name: fadeIn;
+  }
+}
+
+.down-top-section {
+  animation-name: moveBoxSection;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes moveBoxSection {
+  0% {
+    transform: translateY(600px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 

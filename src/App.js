@@ -14,24 +14,19 @@ function App() {
 
         <h1 className='top-down-intro'>UX & UI, product e design de interfaces para boas ideias.</h1>
         <div className="approach down-top-intro">
-          <p>Colaboro com e para negócios se destacarem através do design centrado em pessoas e visando desenvolver soluções criativas e inovadoras.</p>
+          <p>Com +8 anos de experiência eu colaboro com e para negócios se destacarem através do design centrado em pessoas e visando desenvolver soluções criativas e inovadoras.</p>
           <p>A partir de pontes entre design e tecnologia, do produtos ou serviço a storytellings que se conectam gerando resultados.</p>
         </div>
-
-        <section>
-          <a className="lets_talk down-top-intro" target="_blank" href="https://api.whatsapp.com/send?phone=5548996385263" rel="noopener noreferrer">
-            Vamos Conversar?<img src="/img/vector-white.svg" alt="um ícone de seta" />
-          </a>
-
-          <SocialMedia />
-        </section>
+        <a className="lets_talk down-top-section" target="_blank" href="https://api.whatsapp.com/send?phone=5548996385263" rel="noopener noreferrer">
+          Vamos Conversar?<img src="/img/vector-white.svg" alt="um ícone de seta" />
+        </a>
       </main>
 
-      <section className="projects-section">
+      <section className="projects-section down-top-section">
         <div className='title-project'>
           <h2>Alguns projetos</h2>
         </div>
-        
+
         {projectsData.map(project => (
           <ProjectItem key={project.id} project={project} />
         ))}
@@ -41,7 +36,7 @@ function App() {
         <a className="lets_talk_footer" target="_blank" href="https://api.whatsapp.com/send?phone=5548996385263" rel="noopener noreferrer">
           Vamos Conversar?<img src="/img/vector-white.svg" alt="um ícone de seta" />
         </a>
-        
+
         <SocialMedia variant="footer" />
       </footer>
     </div>
