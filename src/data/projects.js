@@ -26,7 +26,7 @@ const projectsData = [
         ],
         tags: ["2025", "Visual design", "UI/UX design", "Brand design"],
         description: "Criei a identidade visual e toda a presença digital da Emet, com foco em traduzir os valores da marca em uma linguagem visual sólida e coerente. Desenhei a experiência e a interface responsiva do site, garantindo clareza na navegação e destaque para os serviços. Desenvolvi o front-end com atenção aos detalhes, performance e consistência entre dispositivos.",
-        tools: ["Adobe Creative Cloud", "Figma", "After Effects", "HTML", "CSS", "JavaScript", "PHP", "WordPress"]
+        tools: ["Adobe Creative Cloud", "Figma", "After Effects", "HTML", "CSS", "JavaScript", "PHP", "Wordpress"]
     },
     {
         id: 3,
@@ -59,6 +59,40 @@ const projectsData = [
         description: "Na ação Squads em Ação da Tiki para o RD Summit, criei o layout e a experiência visual de um jogo interativo exibido em uma TV no estande. Assinei a direção de arte e ilustrei os personagens, conectando a proposta da marca a uma experiência divertida e envolvente para o público do evento.",
         tools: ["Adobe Creative Cloud", "Figma"]
     },
+    {
+        id: 5,
+        title: "Escola Sesi",
+        images: [
+            { id: 1, image: "/img/sesi-01.png", title: "Sesi" },
+            { id: 2, image: "/img/sesi-02.png", title: "Sesi" },
+            { id: 3, image: "/img/sesi-03.png", title: "Sesi" },
+            { id: 4, image: "/img/sesi-04.png", title: "Sesi" },
+            { id: 5, image: "/img/sesi-05.png", title: "Sesi" },
+            { id: 5, image: "/img/sesi-06.png", title: "Sesi" },
+            { id: 5, image: "/img/sesi-07.png", title: "Sesi" },
+            { id: 5, image: "/img/sesi-08.png", title: "Sesi" }
+        ],
+        tags: ["2025", "Visual design", "UI/UX design"],
+        description: "Projeto de educação idealizado pelo Sesi, aqui mapeei a jornada do usuário e realizei testes para validar a usabilidade em uma plataforma de cursos voltada a profissionais. Criei a interface responsiva, todo o visual da experiência, incluindo blog e e lista categorizadas de cursos, e desenvolvi um sistema inteligente de componentes para garantir escalabilidade, consistência e agilidade na evolução do produto.",
+        tools: ["Adobe Creative Cloud", "Figma", "Questionários"]
+    },
+    {
+        id: 7,
+        title: "Gabriela Giacomossi",
+        images: [
+            { id: 1, image: "/img/gabriela-giacomossi-01.png", title: "GG" },
+            { id: 2, image: "/img/gabriela-giacomossi-02.png", title: "GG" },
+            { id: 3, image: "/img/gabriela-giacomossi-03.png", title: "GG" },
+            { id: 4, image: "/img/gabriela-giacomossi-04.png", title: "GG" },
+            { id: 5, image: "/img/gabriela-giacomossi-05.png", title: "GG" },
+            { id: 5, image: "/img/gabriela-giacomossi-06.png", title: "GG" },
+            { id: 5, image: "/img/gabriela-giacomossi-07.png", title: "GG" },
+            { id: 5, image: "/img/gabriela-giacomossi-08.png", title: "GG" }
+        ],
+        tags: ["2023", "Visual design", "UI/UX design"],
+        description: "Desenvolvi o site da Gabriela Giacomossi Arquitetura com foco em elegância e sofisticação. Criei a interface e a experiência responsiva, alinhadas à estética do escritório. Estruturei campos personalizados para tornar o site dinâmico e fácil de atualizar, mantendo a leveza visual em cada detalhe.",
+        tools: ["Adobe Creative Cloud", "Figma", "Questionários", "HTML", "CSS", "JavaScript", "PHP", "Wordpress"]
+    }
 ];
 
 export default projectsData;
