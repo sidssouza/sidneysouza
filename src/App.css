@@ -182,7 +182,7 @@ a {
 .project-image-info {
   border: 1px solid #80f6d8;
   border-radius: 16px !important;
-  max-height: 400px;
+  max-height: 500px;
   transition: var(--transition-xs);
   aspect-ratio: 1/1;
 }

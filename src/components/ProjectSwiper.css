@@ -1,7 +1,7 @@
 @import '/src/App.css';
 
 .projects-image-area {
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     border-radius: 16px;
     cursor: grab;
@@ -13,13 +13,13 @@
 }
 
 .project-image-container {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 16px !important;
 }
 
 .project-image-container img {
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
 }
 
