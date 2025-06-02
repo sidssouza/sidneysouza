@@ -51,8 +51,8 @@ const SocialMedia = ({ variant = 'default' }) => (
     <a target="_blank" href="https://github.com/sidssouza" rel="noopener noreferrer">
       <img src="/img/github-white.svg" alt="Github" />
     </a>
-    <a target="_blank" href="https://www.behance.net/sidssouza" rel="noopener noreferrer">
-      <img src="/img/behance-white.svg" alt="Behance" />
+    <a target="_blank" href="https://dribbble.com/sidssouza" rel="noopener noreferrer">
+      <img src="/img/dribbble-logo.svg" alt="Dribbble" />
     </a>
     <a target="_blank" href="https://www.linkedin.com/in/sidneyssouza/" rel="noopener noreferrer">
       <img src="/img/linkedin_white.svg" alt="Linkedin" />
