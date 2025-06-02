@@ -350,6 +350,12 @@ a {
 }
 
 .social_media_footer a {
+  padding: 1rem;
+  border: var(--border-stroke-sm);
+  border-radius: 100px;
+}
+
+.social_media_footer a {
   transition: var(--transition-xs);
 }
 
