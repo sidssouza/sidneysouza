@@ -207,7 +207,7 @@ a {
 .marqueeGroup::after {
   content: "";
   position: absolute;
-  top: 116px;
+  bottom: 60px;
   width: 80px;
   height: 100px;
   z-index: 2;
@@ -549,13 +549,24 @@ a {
     overflow: hidden;
   }
 
+  .marqueeGroup::before,
+  .marqueeGroup::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    width: 80px;
+    height: 100px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
   .marqueeGroup::before {
     left: 20px;
     background: linear-gradient(to right, var(--color-primary), transparent);
   }
 
   .marqueeGroup::after {
-    right: 20px;
+    right: 2%;
     background: linear-gradient(to left, var(--color-primary), transparent);
   }
 }
