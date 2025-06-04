@@ -548,6 +548,16 @@ a {
     transition: var(--transition-xs);
     overflow: hidden;
   }
+
+  .marqueeGroup::before {
+    left: 20px;
+    background: linear-gradient(to right, var(--color-primary), transparent);
+  }
+
+  .marqueeGroup::after {
+    right: 20px;
+    background: linear-gradient(to left, var(--color-primary), transparent);
+  }
 }
 
 /* Motion */
