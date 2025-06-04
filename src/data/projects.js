@@ -92,6 +92,23 @@ const projectsData = [
         tags: ["2023", "Visual design", "UI/UX design"],
         description: "Desenvolvi o site da Gabriela Giacomossi Arquitetura com foco em elegância e sofisticação. Criei a interface e a experiência responsiva, alinhadas à estética do escritório. Estruturei campos personalizados para tornar o site dinâmico e fácil de atualizar, mantendo a leveza visual em cada detalhe.",
         tools: ["Adobe Creative Cloud", "Figma", "Questionários", "HTML", "CSS", "JavaScript", "PHP", "Wordpress"]
+    },
+    {
+        id: 8,
+        title: "Ergomake",
+        images: [
+            { id: 1, image: "/img/ergomake-01.png", title: "Ergomake" },
+            { id: 2, image: "/img/ergomake-02.png", title: "Ergomake" },
+            { id: 3, image: "/img/ergomake-03.png", title: "Ergomake" },
+            { id: 4, image: "/img/ergomake-04.png", title: "Ergomake" },
+            { id: 5, image: "/img/ergomake-05.png", title: "Ergomake" },
+            { id: 5, image: "/img/ergomake-06.png", title: "Ergomake" },
+            { id: 5, image: "/img/ergomake-07.png", title: "Ergomake" },
+            { id: 5, image: "/img/ergomake-08.png", title: "Ergomake" }
+        ],
+        tags: ["2023", "Visual design", "UI/UX design", "Product Designer"],
+        description: "Colaborei com a Ergomake no projeto de interface de seu produto Saas com objetivo de eliminar gargalos em ambientes de pré-produção no desenvolvimento de software e web.",
+        tools: ["Adobe Creative Cloud", "Figma", "Entrevistas"]
     }
 ];
 

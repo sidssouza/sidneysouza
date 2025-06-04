@@ -20,7 +20,52 @@ function App() {
         <a className="lets_talk down-top-section" target="_blank" href="https://api.whatsapp.com/send?phone=5548996385263" rel="noopener noreferrer">
           Vamos Conversar?<img src="/img/vector-white.svg" alt="um ícone de seta" />
         </a>
+        <img className="hand-sid-heading top-down-intro" src="/img/hand-sid.svg" alt="logotipo" />
       </main>
+
+      <section className="clients-section down-top-section">
+        <div>
+          <h3>Uma jornada colaborativa com marcas influentes e inspiradoras.</h3>
+        </div>
+        <div className='marqueeInfinityLooping'>
+          <div className='marqueeGroup'>
+            <ul className='marqueeList'>
+              <li><img className='invert' src="/img/logos/logo-1.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-2.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-3.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-4.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-5.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-6.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-7.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-8.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-9.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-10.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-11.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-12.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-13.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-14.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-15.svg" alt="logotipo" /></li>
+            </ul>
+            <ul aria-hidden='true' className='marqueeList'>
+              <li><img className='invert' src="/img/logos/logo-1.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-2.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-3.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-4.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-5.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-6.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-7.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-8.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-9.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-10.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-11.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-12.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-13.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-14.svg" alt="logotipo" /></li>
+              <li><img className='invert' src="/img/logos/logo-15.svg" alt="logotipo" /></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <section className="projects-section down-top-section">
         <div className='title-project'>

@@ -70,6 +70,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  list-style: none;
 }
 
 html {
@@ -118,13 +119,11 @@ h3 {
   color: var(--brand-color);
 }
 
-/* Para texto em itálico */
 .italic {
   font-family: var(--font-family-base);
   font-style: italic;
 }
 
-/* Para texto hairline (fino) */
 .hairline {
   font-family: var(--font-family-hairline);
   font-weight: 100;
@@ -155,6 +154,106 @@ a {
   margin: 0;
   text-decoration: none;
   color: var(--brand-color);
+}
+
+/* Hand Sid */
+
+.hand-sid-heading {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  rotate: -15deg;
+  width: 400px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .hand-sid-heading {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+
+  .hand-sid-heading {
+    display: none;
+  }
+}
+
+/* Clients */
+.clients-section {
+  border-top: var(--border-stroke-sm);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.marqueeInfinityLooping {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marqueeGroup {
+  display: flex;
+  gap: 1em;
+  overflow: hidden;
+  user-select: none;
+}
+
+.marqueeGroup::before,
+.marqueeGroup::after {
+  content: "";
+  position: absolute;
+  top: 116px;
+  width: 80px;
+  height: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marqueeGroup::before {
+  left: 60px;
+  background: linear-gradient(to right, var(--color-primary), transparent);
+}
+
+.marqueeGroup::after {
+  right: 60px;
+  background: linear-gradient(to left, var(--color-primary), transparent);
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.marqueeList {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+  min-width: 100%;
+  animation: scrollMarquee 40s linear infinite;
+}
+
+.marqueeList img {
+  width: 200px;
+}
+
+@keyframes scrollMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marqueeGroup:hover .marqueeList {
+  animation-play-state: paused;
 }
 
 /* Projects */
