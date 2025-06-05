@@ -17,9 +17,18 @@ function App() {
           <p>Designer e Dev que colabora com e para negócios se destacarem através do design centrado em pessoas e visando desenvolver soluções criativas e inovadoras.</p>
           <p>A partir de pontes entre design e tecnologia, do produtos ou serviço a storytellings que se conectam gerando resultados.</p>
         </div>
-        <a className="lets_talk down-top-section" target="_blank" href="https://api.whatsapp.com/send?phone=5548996385263" rel="noopener noreferrer">
-          Vamos Conversar?<img src="/img/vector-white.svg" alt="um ícone de seta" />
-        </a>
+
+        <div className='buttons-intro-page'>
+           <a className='down-top-section blog-button' target="_blank" href="https://dev.to/sidssouza" rel="noopener noreferrer">
+            <img src="/img/blog-icon.png" alt="logotipo" />
+            Leia meu blog
+          </a>
+
+          <a className="down-top-section lets_talk" target="_blank" href="https://api.whatsapp.com/send?phone=5548996385263" rel="noopener noreferrer">
+            Vamos Conversar?<img src="/img/vector-white.svg" alt="um ícone de seta" />
+          </a>
+        </div>
+
         <img className="hand-sid-heading top-down-intro" src="/img/hand-sid.svg" alt="logotipo" />
       </main>
 

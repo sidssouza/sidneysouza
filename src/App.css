@@ -387,10 +387,48 @@ a {
   transition: var(--transition-xs);
 }
 
-.lets_talk:hover {
+.lets_talk img {
+  transition: var(--transition-xs);
+}
+
+.lets_talk:hover img {
+  margin-left: var(--spacing-xs);
+}
+
+.buttons-intro-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.blog-button {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  color: var(--brand-color);
+  border: 1px solid rgba(128, 246, 216, 0.1);
+  border-radius: 16px;
+  padding: 8px 12px;
+  gap: var(--spacing-xs);
+  transition: var(--transition-xs);
+}
+
+.blog-button:hover {
+  display: flex;
+  align-items: center;
+  color: var(--brand-color);
+  border: 1px solid rgba(128, 246, 216, 1);
+  border-radius: 16px;
+  padding: 8px 12px;
+  gap: var(--spacing-xs);
+}
+
+.blog-button img {
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(128, 246, 216, 0.5);
+  border-radius: 50px;
 }
 
 .social_media {
