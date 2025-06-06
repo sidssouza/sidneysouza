@@ -189,6 +189,15 @@ a {
   gap: var(--spacing-sm);
 }
 
+.clients-section h2 {
+  font-family: var(--font-family-hairline);
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--font-size-xl);
+  margin: 0;
+  color: var(--brand-color);
+}
+
 .marqueeInfinityLooping {
   width: 100%;
   display: flex;

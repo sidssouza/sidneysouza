@@ -34,7 +34,7 @@ function App() {
 
       <section className="clients-section down-top-section">
         <div>
-          <h3>Uma jornada colaborativa com marcas influentes e inspiradoras.</h3>
+          <h2>Uma jornada colaborativa com marcas influentes e inspiradoras.</h2>
         </div>
         <div className='marqueeInfinityLooping'>
           <div className='marqueeGroup'>
